@@ -3,6 +3,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const botonesFiltro = document.querySelectorAll(".filtro");
     const productos = document.querySelectorAll(".producto");
 
+    // Mostrar cuántos platos hay en cada filtro
+    botonesFiltro.forEach((boton) => {
+        const categoria = boton.dataset.filtro;
+        const cantidad = categoria === "todos"
+            ? productos.length
+            : document.querySelectorAll(
+                `.producto[data-categoria="${categoria}"]`
+            ).length;
+
+        const contador = document.createElement("span");
+        contador.className = "contador";
+        contador.textContent = `(${cantidad})`;
+        boton.append(contador);
+    });
+
     botonesFiltro.forEach((boton) => {
         boton.addEventListener("click", () => {
             const categoriaElegida = boton.dataset.filtro;
