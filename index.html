@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los sabores y la cultura gastronómica de los Países Bajos.">
+    <meta name="theme-color" content="#17221c">
+
+    <title>Menú Países Bajos | Sabores con historia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funciones.js" defer></script>
+</head>
+
+<body>
+    <div class="bandera" aria-hidden="true"></div>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <a href="#inicio" class="logo">
+            <span class="logo-icono">✦</span>
+            <span>MENÚ PAÍSES BAJOS</span>
+        </a>
+
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="#inicio" style="color:red;">Inicio</a>
+            <a href="#menu" style="color:white;">Nuestro menú</a>
+            <a href="#cultura" style="color:blue;">Cultura</a>
+</nav>
+    </header>
+
+    <main>
+        <!-- PORTADA -->
+        <section class="hero" id="inicio">
+            <div class="hero-texto">
+                <span class="etiqueta">GASTRONOMÍA · CULTURA · TRADICIÓN</span>
+                <p class="hero-numero">01 — UN VIAJE DE SABORES</p>
+
+                <h1>
+                    Países Bajos,<br>
+                    una tradición<br>
+                    <em>para saborear.</em>
+                </h1>
+
+                <p class="hero-descripcion">
+                    Descubre la esencia de la cocina neerlandesa a través
+                    de sus platos caseros, sus quesos emblemáticos y sus
+                    dulces tradicionales. Un recorrido que reúne sabores
+                    y costumbres en cada preparación.
+                </p>
+
+                <div class="botones">
+                    <a href="#menu" class="boton boton-principal">
+                        Descubrir el menú <span>↗</span>
+                    </a>
+                    <a href="#cultura" class="boton boton-secundario">
+                        Nuestra cultura
+                    </a>
+                </div>
+
+                <div class="hero-pie">
+                    <div class="linea-bandera">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>UNA EXPERIENCIA NEERLANDESA</span>
+                </div>
+            </div>
+
+            <div class="hero-imagen">
+                <img src="images/stamppot.png"
+                     alt="Stamppot con verduras y salchicha">
+
+                <div class="hero-superposicion">
+                    <span class="hero-foto-etiqueta">NUESTRA SELECCIÓN</span>
+                    <div class="hero-foto-titulo">
+                        <span>01 / ESPECIALIDAD</span>
+                        <h2>Stamppot</h2>
+                        <p>Tradición servida en la mesa.</p>
+                    </div>
+                </div>
+
+                <div class="sello">
+                    SABORES<br>CON<br>HISTORIA
+                </div>
+            </div>
+        </section>
+
+        <!-- MENÚ -->
+        <section class="seccion menu-seccion" id="menu">
+            <div class="titulo-seccion">
+                <div>
+                    <span class="etiqueta">DESCUBRE LOS SABORES</span>
+                    <h2>Nuestro menú</h2>
+                </div>
+                <p>
+                    Diez preparaciones para descubrir diferentes sabores,
+                    ingredientes y costumbres de la gastronomía neerlandesa.
+                </p>
+            </div>
+
+            <!-- FILTROS -->
+            <div class="filtros" role="group" aria-label="Filtrar preparaciones">
+                <button type="button" class="filtro activo"
+                        data-filtro="todos" aria-pressed="true">Todos</button>
+                <button type="button" class="filtro"
+                        data-filtro="salado" aria-pressed="false">Salados</button>
+                <button type="button" class="filtro"
+                        data-filtro="dulce" aria-pressed="false">Dulces</button>
+                <button type="button" class="filtro"
+                        data-filtro="acompanamiento" aria-pressed="false">Acompañamientos</button>
+            </div>
+
+            <!-- PRODUCTOS -->
+            <div class="productos">
+
+                <article class="producto" data-categoria="salado">
+                    <div class="producto-imagen">
+                        <img src="images/stamppot.png" alt="Stamppot con salchicha" loading="lazy">
+                        <span class="numero">01 / 10</span>
+                    </div>
+                    <div class="producto-info">
+                        <span class="tipo">PLATO TRADICIONAL</span>
+                        <h3>Stamppot con salchicha</h3>
+                        <p>Preparación casera de puré de papa mezclado con verduras de hoja verde y acompañado de salchicha dorada. Es una comida reconfortante de la cocina cotidiana de los Países Bajos.</p>
+                        <div class="ingredientes"><strong>Ingredientes:</strong> papa, verduras verdes, salchicha y condimentos.</div>
+                        <span class="origen">Origen: Países Bajos</span>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="salado">
+                    <div class="producto-imagen">
+                        <img src="images/bitterballen.png" alt="Croquetas bitterballen" loading="lazy">
+                        <span class="numero">02 / 10</span>
+                    </div>
+                    <div class="producto-info">
+                        <span class="tipo">APERITIVO</span>
+                        <h3>Bitterballen</h3>
+                        <p>Croquetas redondas y crujientes con un relleno suave de carne. Se sirven calientes y suelen acompañarse con mostaza en bares y reuniones.</p>
+                        <div class="ingredientes"><strong>Ingredientes:</strong> carne de res, caldo, harina, mantequilla, hierbas y pan rallado.</div>
+                        <span class="origen">Origen: Países Bajos</span>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="dulce">
+                    <div class="producto-imagen">
+                        <img src="images/flan-red-velvet.png" alt="Postre red velvet con crema y fresas" loading="lazy">
+                        <span class="numero">03 / 10</span>
+                    </div>
+                    <div class="producto-info">
+                        <span class="tipo">POSTRE</span>
+                        <h3>Flan red velvet</h3>
+                        <p>Postre individual que combina una base de bizcocho rojo con una capa cremosa tipo flan, decorada con crema batida y fruta fresca.</p>
+                        <div class="ingredientes"><strong>Ingredientes:</strong> bizcocho red velvet, mezcla de flan, crema y fresas.</div>
+                        <span class="origen">Repostería contemporánea</span>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="dulce">
+                    <div class="producto-imagen">
+                        <img src="images/poffertjes-plato.png" alt="Poffertjes con azúcar pulverizada" loading="lazy">
+                        <span class="numero">04 / 10</span>
+                    </div>
+                    <div class="producto-info">
+                        <span class="tipo">DULCE TRADICIONAL</span>
+                        <h3>Poffertjes</h3>
+                        <p>Pequeños pancakes esponjosos, dorados por fuera y suaves por dentro. En los Países Bajos se sirven normalmente con mantequilla y azúcar pulverizada.</p>
+                        <div class="ingredientes"><strong>Ingredientes:</strong> harina, leche, huevo, levadura, mantequilla y azúcar.</div>
+                        <span class="origen">Origen: Países Bajos</span>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="salado">
+                    <div class="producto-imagen">
+                        <img src="images/tabla-quesos.png" alt="Tabla de quesos, frutas, panes y salsas" loading="lazy">
+                        <span class="numero">05 / 10</span>
+                    </div>
+                    <div class="producto-info">
+                        <span class="tipo">PARA COMPARTIR</span>
+                        <h3>Tabla de quesos y bocados</h3>
+                        <p>Una selección para compartir que combina quesos, panes, frutas, galletas y acompañamientos. Se inspira en la tradición quesera neerlandesa.</p>
+                        <div class="ingredientes"><strong>Ingredientes:</strong> quesos variados, pan, uvas, galletas, frutos secos y salsas.</div>
+                        <span class="origen">Inspiración neerlandesa</span>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="acompanamiento">
+                    <div class="producto-imagen">
+                        <img src="images/patatas-fritas.png" alt="Porción de patatas fritas doradas" loading="lazy">
+                        <span class="numero">06 / 10</span>
+                    </div>
+                    <div class="producto-info">
+                        <span class="tipo">ACOMPAÑAMIENTO</span>
+                        <h3>Patatas fritas</h3>
+                        <p>Patatas cortadas en bastones y fritas hasta quedar doradas y crujientes. En los Países Bajos, las frietjes suelen servirse con distintas salsas.</p>
+                        <div class="ingredientes"><strong>Ingredientes:</strong> papa, aceite, sal y salsas al gusto.</div>
+                        <span class="origen">Popular en Países Bajos y Bélgica</span>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="dulce">
+                    <div class="producto-imagen">
+                        <img src="images/oliebollen.png" alt="Oliebollen con azúcar pulverizada" loading="lazy">
+                        <span class="numero">07 / 10</span>
+                    </div>
+                    <div class="producto-info">
+                        <span class="tipo">DULCE FESTIVO</span>
+                        <h3>Oliebollen</h3>
+                        <p>Buñuelos de masa fermentada, fritos y espolvoreados con azúcar pulverizada. Son populares durante las celebraciones de fin de año neerlandesas.</p>
+                        <div class="ingredientes"><strong>Ingredientes:</strong> harina, levadura, leche, huevo y azúcar; pueden llevar pasas.</div>
+                        <span class="origen">Origen: Países Bajos</span>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="salado">
+                    <div class="producto-imagen">
+                        <img src="images/queso-holandes.png" alt="Cubos de queso holandés" loading="lazy">
+                        <span class="numero">08 / 10</span>
+                    </div>
+                    <div class="producto-info">
+                        <span class="tipo">BOCADO PARA COMPARTIR</span>
+                        <h3>Queso holandés en cubos</h3>
+                        <p>Porciones pequeñas de queso para degustar y compartir. Gouda y Edam son dos variedades reconocidas de la tradición quesera del país.</p>
+                        <div class="ingredientes"><strong>Ingredientes:</strong> queso semiduro, como Gouda o Edam.</div>
+                        <span class="origen">Tradición quesera neerlandesa</span>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="dulce">
+                    <div class="producto-imagen">
+                        <img src="images/stroopwafels.png" alt="Galletas stroopwafels rellenas de caramelo" loading="lazy">
+                        <span class="numero">09 / 10</span>
+                    </div>
+                    <div class="producto-info">
+                        <span class="tipo">GALLETAS TRADICIONALES</span>
+                        <h3>Stroopwafels</h3>
+                        <p>Dos capas finas de galleta unidas por un relleno de sirope de caramelo. Se pueden colocar sobre una bebida caliente para suavizar el relleno.</p>
+                        <div class="ingredientes"><strong>Ingredientes:</strong> harina, mantequilla, azúcar, huevo, canela y sirope.</div>
+                        <span class="origen">Origen: Gouda, Países Bajos</span>
+                    </div>
+                </article>
+
+                <article class="producto" data-categoria="dulce">
+                    <div class="producto-imagen">
+                        <img src="images/poffertjes-holanda.png" alt="Poffertjes con azúcar y fruta" loading="lazy">
+                        <span class="numero">10 / 10</span>
+                    </div>
+                    <div class="producto-info">
+                        <span class="tipo">ESPECIALIDAD DULCE</span>
+                        <h3>Poffertjes con azúcar</h3>
+                        <p>Otra presentación de los mini pancakes neerlandeses, servidos con azúcar pulverizada y fruta fresca. Son ideales como merienda o postre.</p>
+                        <div class="ingredientes"><strong>Ingredientes:</strong> harina, leche, huevo, levadura, azúcar y fruta.</div>
+                        <span class="origen">Origen: Países Bajos</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="nota">
+                <strong>Nota:</strong> el menú incluye preparaciones tradicionales,
+                productos asociados a la cultura neerlandesa y opciones
+                contemporáneas presentes en las imágenes.
+            </p>
+        </section>
+
+        <!-- CULTURA -->
+        <section class="seccion cultura" id="cultura">
+            <div class="cultura-texto">
+                <span class="etiqueta">MÁS QUE COMIDA</span>
+                <h2>Una mesa que cuenta historias</h2>
+
+                <p>
+                    La gastronomía neerlandesa combina platos caseros,
+                    aperitivos para compartir, una reconocida tradición
+                    quesera y dulces ligados a mercados y celebraciones.
+                </p>
+
+                <p>
+                    Los bitterballen, poffertjes, oliebollen y stroopwafels
+                    permiten acercarnos a diferentes costumbres culinarias
+                    de los Países Bajos.
+                </p>
+
+                <a class="enlace-cultura" href="#menu">
+                    Explorar las preparaciones <span>↗</span>
+                </a>
+            </div>
+
+            <div class="cultura-imagen">
+                <img src="images/poffertjes-plato.png"
+                     alt="Poffertjes neerlandeses" loading="lazy">
+                <span class="cultura-pie-foto">
+                    DULCES TRADICIONALES · PAÍSES BAJOS
+                </span>
+            </div>
+        </section>
+</main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie">
+        <a href="#inicio">MENÚ PAÍSES BAJOS</a>
+        <p>Gastronomía · Cultura · Tradición</p>
+
+    </footer>
+
+</body>
+</html>
